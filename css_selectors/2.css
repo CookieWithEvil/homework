@@ -24,6 +24,6 @@ p:not(class){
 * > a:first-child{
   background-color: var(--color_5);
 }
-*[data-href*="highlight_me"]{
+*[data-href~="highlight_me"]{
  color: red;
 }
