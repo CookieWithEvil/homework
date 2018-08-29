@@ -18,6 +18,6 @@ div p.active + h2{
 div > span ~ h2{
   background-color: var(--color_3);
 }
-div + h2{
+div ~ h2{
   background-color: var(--color_4);
 }
