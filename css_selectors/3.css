@@ -8,8 +8,8 @@
 --color_7: #085F63;
 --color_8: #887575;
 }
-.www:link, .www:visited{
-  color: var(--color-6);
+.www:visited,.www:link{
+  background-color: var(--color-6, #E4F091);
 }
 a:active:not(.www){
   color: var(--color-7);
