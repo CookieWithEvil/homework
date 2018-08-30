@@ -8,7 +8,7 @@
 --color_7: #085F63;
 --color_8: #887575;
 }
-.www:visited,.www:link{
+a.www:visited,a.www:link{
   background-color: var(--color-6, #E4F091);
 }
 a:active:not(.www){
