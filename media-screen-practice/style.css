@@ -1,0 +1,125 @@
+.block {
+  margin-bottom: 10px;
+}
+.block > div:not(.clearfix) {
+  background: #00BCD4;
+  border: 1px solid #fff;
+  height: 150px;
+  color: #fff;
+  display: block;
+}
+.clearfix {
+  float: none;
+  position: relative;
+}
+.clearfix:after {
+  height: 1px;
+  width: 100%;
+  display: block;
+  clear: both;
+  content: "";
+}
+.inside {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.text {
+  position: absolute;
+  transform: translate(-50% ,-50%);
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+
+@media all and (max-device-width: 768px) and (min-device-width: 320px){
+	.one .plain, .two .colored{
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.three{
+		width: 100%;
+	}
+	.four .colored:nth-child(1),
+	.four .colored:nth-child(2){
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.four .colored{
+		float: left;
+		width: 100%;
+	}
+	.fifth{
+		width: 100%;
+	}
+}
+
+@media all and (max-device-width: 960px) and (min-device-width: 768px){
+	.fifth .colored:nth-child(1),
+	.fifth .colored:nth-child(2){
+		float: left;
+		width: calc(50% - 2px);
+	}	
+	.fifth .colored{
+		float: left;
+		width: 100%;
+	}
+}
+
+@media all and (max-device-width: 1200px) and (min-device-width: 960px){
+	.one .plain:nth-child(1),.one .plain:nth-child(2), .two .colored{
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.one .plain{
+		float: left;
+		width: 100%;
+	}
+	.three .colored:nth-child(1),
+	.three .colored:nth-child(2){
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.three .colored{
+		float: left;
+		width: 100%;
+	}
+	.four .colored:nth-child(1),
+	.four .colored:nth-child(3){
+		float: left;
+		width: calc(35% - 2px);
+	}
+	.four .colored:nth-child(2){
+		float: left;
+		width: calc(30% - 2px);
+	}
+	.fifth .colored:nth-child(2),
+	.fifth .colored:nth-child(3){
+		float: left;
+		width: calc(50% - 2px);
+	}
+}
+
+@media all and (min-device-width: 1440px){
+	.one .plain, .two .colored{
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.three .colored{
+		float: left;
+		width: calc(25% - 2px);
+	}
+	.four .colored:nth-child(1),
+	.four .colored:nth-child(2){
+		float: left;
+		width: calc(25% - 2px);
+	}
+	.four .colored:nth-child(3){
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.fifth .colored{
+		float: left;
+		width: calc(20% - 2px);	
+	}
+}
