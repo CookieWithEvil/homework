@@ -54,9 +54,27 @@
 	}
 }
 
-@media all and (max-device-width: 960px) and (min-device-width: 768px){
+@media all and (max-width: 960px)  and (min-width: 768px){
+	.one .plain, .two .colored{
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.three{
+		width: 100%;
+	}
+	.four .colored:nth-child(1),
+	.four .colored:nth-child(2){
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.four .colored{
+		float: left;
+		width: 100%;
+	}
 	.fifth .colored:nth-child(1),
-	.fifth .colored:nth-child(2){
+	.fifth .colored:nth-child(2),
+	.fifth .colored:nth-child(3),
+	.fifth .colored:nth-child(4){
 		float: left;
 		width: calc(50% - 2px);
 	}	
@@ -66,8 +84,41 @@
 	}
 }
 
-@media all and (max-device-width: 1200px) and (min-device-width: 960px){
-	.one .plain:nth-child(1),.one .plain:nth-child(2), .two .colored{
+@media all and (max-device-width: 1000px) and (min-device-width: 961px){
+	.one .plain:nth-child(1),.one .plain:nth-child(2), .two .colored,
+	.one .plain:nth-child(3),.one .plain:nth-child(4){
+		float: left;
+		width: calc(50% - 2px);
+	}
+	.one .plain{
+		float: left;
+		width: 100%;
+	}
+	.three .colored{
+		float: left;
+		width: calc(33% - 2px);
+	}
+	.four .colored:nth-child(1),
+	.four .colored:nth-child(3){
+		float: left;
+		width: calc(35% - 2px);
+	}
+	.four .colored:nth-child(2){
+		float: left;
+		width: calc(30% - 2px);
+	}
+	.fifth .colored{
+		float: left;
+		width: calc(33% - 2px);
+	}
+	.fifth .colored:nth-child(4){
+		margin-left: 17%;
+	}
+}
+
+@media all and (max-device-width: 1440px) and (min-device-width: 1000px){
+	.one .plain:nth-child(1),.one .plain:nth-child(2), .two .colored,
+	.one .plain:nth-child(3),.one .plain:nth-child(4){
 		float: left;
 		width: calc(50% - 2px);
 	}
@@ -80,9 +131,9 @@
 		float: left;
 		width: calc(50% - 2px);
 	}
-	.three .colored{
+	.three .colored:nth-child(3){
 		float: left;
-		width: 100%;
+		width: calc(100% - 2px);
 	}
 	.four .colored:nth-child(1),
 	.four .colored:nth-child(3){
@@ -93,17 +144,27 @@
 		float: left;
 		width: calc(30% - 2px);
 	}
-	.fifth .colored:nth-child(2),
-	.fifth .colored:nth-child(3){
+	.fifth .colored{
 		float: left;
-		width: calc(50% - 2px);
+		width: calc(33% - 2px);
+	}
+	.fifth .colored:nth-child(4){
+		margin-left: 17%;
 	}
 }
 
 @media all and (min-device-width: 1440px){
-	.one .plain, .two .colored{
+	.one .plain {
+		float: left;
+		width: calc(25% - 2px);
+	}
+	.two .colored{
 		float: left;
 		width: calc(50% - 2px);
+	}
+	.three{
+		width: 100%;
+		padding: 0 8%;
 	}
 	.three .colored{
 		float: left;
