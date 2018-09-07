@@ -177,7 +177,7 @@ footer span:last-child{
 	font-style: italic;
 }
 
-@media all and (max-width: 700px){
+@media all and (max-width: 768px){
 	.wrapper{
 		padding: 0;
 	}
@@ -237,10 +237,12 @@ footer span:last-child{
 	footer{
 		height: 1%;
 		overflow: auto;
-		padding: 0 3%;
+		padding: 0 2%;
 		background: #ff5c33;
+		width: 100%
 	}
 	footer span{
+		margin: 0 3%;
 		line-height: 30px;
 	}
 }
