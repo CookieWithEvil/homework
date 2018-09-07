@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	font-size: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+/*header*/
+header{
+	display: flex;
+	height: 88px;
+	width: 100%;
+}
+header #logo{
+	width: 88px;
+	background: gold;
+}
+header #menu{
+	width: calc(100% - 88px);
+	background: red;
+}
+header #logo,header #menu,
+#news, #list,
+aside, footer{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+}
+/*wrapper*/
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	height: 300px;
+	width: 75%;
+	background: red;
+}
+#news{
+	height: 200px;
+	width: calc(39%);
+	background: chocolate;
+}
+#list{
+	height: 200px;
+	width: calc(60% + 6.2px);
+	background: gold;
+}
+/*aside*/
+aside{
+	height: 300px;
+	width: calc(25% - 2px);
+	background: gray;
+}
+/*footer*/
+footer{
+	height: 98px;
+	width: calc(100% - 3px);
+	background: gold;	
+	align-self: baseline;
+}
