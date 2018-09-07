@@ -1,62 +1,246 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-	<header id="header">
-	<div class="wrapper">
-		<a href="" id="logo">
-			<div class="image"></div>
-			<span>One more site</span>
-		</a>
-		<ul id="nav">
-			<li><a href="">MAIN</a>
-				<ol id="dropdown">
-					<li><a href="">Main</a></li>
-					<li><a href="">Second Main</a></li>
-				</ol>
-			</li>
-			<li><a href="">CONTACTS</a></li>
-		</ul>
-	</div>
-	</header>
-	<main>
-	<div class="wrapper">
-		<h1>Our Insights</h1>
-		<ul>
-			<li>
-				<div class="icon"></div>
-				<h3>Lorem ipsum sir <br> dolor amed</h3>
-				<button>Details</button>
-			</li>
-			<li>
-				<div class="icon"></div>
-				<h3>Lorem ipsum sir <br> dolor amed</h3>
-				<button>Details</button>
-			</li>
-			<li>
-				<div class="icon"></div>
-				<h3>Lorem ipsum sir <br> dolor amed</h3>
-				<button>Details</button>
-			</li>
-		</ul>
-		<div id="articles">
-		<p class="text">Lorem ipsum sir dolor amed Lorem ipsum sir dolor amed Lorem ipsum sir dolor am	Lorem ipsum sir dolor amed Lorem ipsum sir dolor amed med Lorem ipsum sir dolor Lorem ipsum sir dolor amed Lorem ipsum dolor amed Lorem med Lorem ipsum sir ipsum sir dolor amed Lorem ipsum sir dol amed Lorem ipsum sir dolor amed amed Lorem ipsum sir dolor amed Lorem ipsum dolor amed Lorem ipsum sir dolor amed</p>
-		<p class="text">Lorem ipsum sir dolor amed Lorem ipsum sir dolor amed Lorem ipsum sir dolor am	Lorem ipsum sir dolor amed Lorem ipsum sir dolor amed med Lorem ipsum sir dolor Lorem ipsum sir dolor amed Lorem ipsum dolor amed Lorem med Lorem ipsum sir ipsum sir dolor amed Lorem ipsum sir dol amed Lorem ipsum sir dolor amed amed Lorem ipsum sir dolor amed Lorem ipsum dolor amed Lorem ipsum sir dolor amed</p>	
-		</div>
-	</div>
-	<div id="anchor-top"><a href="#header"></a></div>
-	</main>	
+body{
+	margin: 0;
+	font-family: Gabriela;
+	font-size: 15px;
+}
+.wrapper{
+	padding: 0 15%;
+}
+/*HEADER*/
+header{
 	
-	<footer>
-	<div class="wrapper">
-		<span>2018 Mate Academy</span>
-		<span>Created by one more awesome developer</span>
-	</div>	
-	</footer>
-</body>
-</html>
+	height: 65px;
+	background: #ff5c33;
+} 
+/*logo*/
+header #logo{
+	float: left;
+	color: black;
+}
+header #logo .image{
+	float: left;
+	margin: 2.5px 10px 0 0;
+	height: 60px;
+	width: 70px;
+	background: url("images/logo.png");
+	background-size: 100% 100%;
+}
+header #logo span{
+	font-weight: bold;
+	line-height: 65px;
+}
+/*nav*/
+header #nav{
+	display: inline-block;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+header #nav > li{
+	float: left;
+	display: inline-block;	
+	line-height: 65px;
+	height: 65px;
+	padding: 0 20px;
+	font-size: 1.5em;		
+}
+header #nav li a{
+	color: white;
+	text-decoration: none;
+}
+header #nav li:first-child{
+	width: 70px;
+}
+header #nav li #dropdown{
+	display: none;
+	position: relative;
+	left: -20px;
+	padding: 10px 15px;
+	width: 180px;
+	background: #333333;
+	box-shadow: 0px 15px 15px silver;	
+}
+header #nav li #dropdown li{
+	line-height: 30px;
+	list-style: decimal inside;
+	padding: 0px 0px;
+	font-size: 0.9em;
+	background: #333333;
+	color: white;
+}
+header #nav li:hover{
+	background: #333333;
+}
+header #nav li:hover #dropdown{
+	display: block;	
+}
+header #nav li:hover #dropdown a:hover,
+main ul li button:hover{
+	text-decoration: underline;
+	cursor: pointer
+}
+/*MAIN*/
+main h1{	
+	text-align: center;
+	padding: 75px 0 50px;
+	color: #fe470f;
+	font-size: 2.4em;
+	font-weight: normal;
+}
+/*ul*/
+main{
+	text-align: center;
+}
+main ul{
+	display: inline-block;
+	min-width: 77%;
+	margin: 0 auto 60px;
+}
+main ul li{
+	display: inline-block;
+	margin: 0 30px;
+	width: 176px;
+	text-align: center;
+}
+main ul li h3{
+	font-size: 1.4em;
+}
+main ul li .icon{
+	display: inline-block;
+	height: 86px;
+	width: 75px;
+}
+main ul li:nth-child(1) .icon{
+	width: 84px;
+	background: url("images/icons.png");
+	background-size: 293% 100%;
+}
+main ul li:nth-child(2) .icon{
+	background: url("images/icons.png") 52%;
+	background-size: 300% 100%;
+}
+main ul li:nth-child(3) .icon{
+	background: url("images/icons.png") right no-repeat;
+	background-size: 307% 100%;
+}
+main ul li button{
+	height: 50px;
+	width: 100%;
+	color: white;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-family: Gabriela;
+	background: #ff5c33;
+	border: none;
+}
+/*articles*/
+main #articles{
+	min-height: 200px;
+	width: 80%;
+	margin: 0 auto 80px;
+	text-align: left;
+}
+main .text{
+	display: inline-block;	
+	padding: 0;
+	width: 45%;
+}
+main .text:first-child{
+	float: left;
+}
+main .text:last-child{
+	float: right;
+}
+#anchor-top{
+	display: block;
+	margin: 0 20px;	
+	height: 40px;
+}
+#anchor-top a{
+	display: block;
+	float: right;
+	height: 40px;
+	width: 40px;
+	background: url("images/arrow.png") center no-repeat;
+}
+/*FOOTER*/
+footer{
+	margin: 20px 0 0;
+	color: white;
+	background: #ff5c33;
+}
+footer span{
+	line-height: 45px;
+}
+footer span:last-child{
+	float: right;
+	font-style: italic;
+}
+
+@media all and (max-width: 700px){
+	.wrapper{
+		padding: 0;
+	}
+	/*HEADER*/
+	/*logo*/
+	header #logo{
+		margin: 0 0 0 15px;
+	}
+	header #logo span{
+		display: none;
+	}
+	/*nav*/
+	header #nav li{
+		font-size: 0.9em;
+		margin: 0;
+		padding: 0 5px;
+		text-align: center;
+	}
+	header #nav li #dropdown{
+		position: absolute;
+		left: 0px;
+		width: 94.8%;
+		box-shadow: 0 5px 5px silver;
+	}
+	header #nav li #dropdown li{
+		text-align: left;
+	}
+	/*MAIN*/
+	main h1{
+		padding: 50px 0 30px;
+	}
+	/*ul*/
+	main ul{
+		width: 50%;
+		margin: 0 auto 60px;
+		padding: 0;
+		text-align: center;
+	}
+	main ul li{
+		margin: 0 0 27px;
+	}
+	/*articles*/
+	main .text{		
+		display: block;
+		margin:0 auto;
+		padding: 10%;
+		width: 80%;
+	}
+	main .text:last-child{
+		display: none;
+	}
+	/*anchor*/
+	#anchor-top{
+		display: none;
+	}
+	/*FOOTER*/
+	footer{
+		height: 1%;
+		overflow: auto;
+		padding: 0 3%;
+		background: #ff5c33;
+	}
+	footer span{
+		line-height: 30px;
+	}
+}
