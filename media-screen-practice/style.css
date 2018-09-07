@@ -37,7 +37,8 @@
 		float: left;
 		width: calc(50% - 2px);
 	}
-	.three{
+	.three .colored{
+		float: left;
 		width: 100%;
 	}
 	.four .colored:nth-child(1),
