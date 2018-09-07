@@ -41,11 +41,6 @@
 		float: left;
 		width: 100%;
 	}
-	.four .colored:nth-child(1),
-	.four .colored:nth-child(2){
-		float: left;
-		width: calc(50% - 2px);
-	}
 	.four .colored{
 		float: left;
 		width: 100%;
