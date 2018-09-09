@@ -37,12 +37,12 @@ aside, footer{
 }
 #news{
 	height: 200px;
-	width: calc(39%);
+	width: calc(40% - 2px);
 	background: chocolate;
 }
 #list{
 	height: 200px;
-	width: calc(60% + 6.2px);
+	width: calc(60% - 2px);
 	background: gold;
 }
 /*aside*/
