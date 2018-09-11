@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+}
+.wrapper{
+	height: 100vh;
+	overflow: auto;
+	width: 100%;
+	background: DarkRed;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+}
+.wrapper div{
+	margin-top: 10px;
+	height: 180px;
+	width: 260px;
+}
+.gold{
+	flex-grow: 24;
+	background: gold;
+}
+.orange{
+	flex-grow: 4;
+	background: orange;
+}
+.orange-red{
+	flex-grow: 3;
+	background: orangered;
+}
+.coral{
+	flex-grow: 1;
+	background: coral;
+}
+.forest-green{
+	flex-grow: 0;
+	background: forestgreen;
+}
