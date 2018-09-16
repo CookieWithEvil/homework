@@ -1,0 +1,53 @@
+html, body{
+	margin: 0;
+	height: 100%;
+	overflow: auto;
+}
+body{
+	position: relative;
+}
+.wrapper h1{
+	position: relative;
+	top: 20px;
+	left: 35%;
+	width: 20%;
+	font-size: 90px;
+	text-align: center;
+	transform: rotate(-15deg);
+}
+.container{
+	position: absolute;
+	top: 0;
+	min-height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+.message{
+	position: fixed;
+	top: 145px;
+	left: 34%;
+	padding: 20px;
+	height: 160px;
+	width: calc(35% - 40px);
+	background: silver;
+	transform: rotate(-15deg);
+	border-radius: 10px;
+}
+.message .close{
+	position: absolute;
+	top: -25px;
+	left: 94%;
+	height: 50px;
+	width: 50px;
+	background: white;
+	border: none;
+	border-radius: 50%;
+	font-size: 40px;
+	font-weight: bold;
+	color: orange;
+}
+.message h1{
+	margin: 0;
+	height: 160px;
+	background: white;	
+}
