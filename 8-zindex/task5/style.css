@@ -1,0 +1,77 @@
+html, body{
+	margin: 0;
+	height: 100%;
+	overflow: auto;
+}
+body{
+	position: relative;
+	background: url("mountain.png") no-repeat;
+	background-size: 100% 100%;
+	font-family: Arial;
+}
+/*form*/
+form{
+	margin: 50px auto 0;
+	min-height: 300px;
+	width: 40%;
+	background: rgba(150,150,150, 0.8);
+}
+/*IMAGE*/
+form .image{
+	margin: auto;
+	padding: 70px 0 0;
+	width: 30%;
+}
+form .image .line:first-child{
+	position: relative;
+	top: 0; left: 50px;
+	height: 50px;
+	width: 20px;
+	background: white;
+	box-shadow: inset 0 -15px 15px silver;
+	transform: rotate(-45deg);
+	z-index: 1;
+}
+form .image .line:last-child{
+	position: relative;
+	top: -85px; left: 96px;
+	height: 100px;
+	width: 20px;
+	background: white;
+	transform: rotate(45deg);
+	z-index: 10;
+}
+/*form*/
+form .container{
+	margin: 30px auto;
+	width: 80%;
+	border-bottom: 1px solid black;
+}
+form .container input{
+	padding: 10px;
+	width: 90%;
+	border: none;
+	background: none;
+}
+::placeholder{
+	color: black;
+}
+/**/
+input[type="submit"]{
+	display: block;
+	margin: auto;
+	padding: 10px;
+	width: 30%;
+	color: white;
+	background: OrangeRed;
+	border: none;
+	border-radius: 15px;
+}
+p{
+	margin: 30px auto;
+	width: 50%;
+}
+a{
+	color: black;
+	font-weight: bold;
+}
