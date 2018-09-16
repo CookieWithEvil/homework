@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+}
+
+ul{
+	margin: 50px 2% 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	border: 1px solid;
+	width: 80%;
+}
+ul li .tab{
+	line-height: 50px;
+	width: 10%;
+	text-align: center;
+	border: 2px solid gray;
+	border-bottom: 1px solid white;
+	background: white;
+}
+ul li .acticle{
+	position: absolute;
+	top: 50px;
+	padding: 5%;
+	height: 100px;
+	width: 90%;
+	border: 2px solid gray;
+	background: white;
+}
+ul li:nth-child(1) .tab{
+	position: absolute;
+	top: 0;
+	z-index: 4;
+}
+ul li:nth-child(2) .tab{
+	margin-left: 11%;
+	position: absolute;
+	z-index: 4;
+	top: 0;
+}
+ul li:nth-child(3) .tab{
+	margin-left: 22%;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+}
+ul li:nth-child(4) .tab{
+	margin-left: 33%;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+}
+
+ul li .tab:hover + .acticle{
+	z-index: 3;
+}
