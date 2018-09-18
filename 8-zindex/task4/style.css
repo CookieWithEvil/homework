@@ -1,6 +1,7 @@
 body{
 	margin: 0;	
 	font-family: Arial;
+	overflow-y: scroll;
 }
 /*HEADER*/
 header{
@@ -28,12 +29,13 @@ header button{
 }
 /*form*/
 form{
-	margin: auto;
+	margin: 0 auto 100px;
+	padding: 100px 0 0;
 	width: 60%;
 }
 input[type="text"]{
-	margin: 10px 0;
-	padding: 10px;
+	margin: 20px 0;
+	padding: 20px 10px;
 	width: calc(100% - 20px);
 	border: none;
 	border-bottom: 1px solid silver;
