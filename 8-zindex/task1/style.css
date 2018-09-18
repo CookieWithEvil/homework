@@ -7,21 +7,24 @@ ul{
 	padding: 0;
 }
 ul li{
+	
 	list-style: none;
-	border: 1px solid;
 	width: 80%;
 }
 ul li .tab{
+	margin-top: 50px;
+	display: inline-block;
 	line-height: 50px;
 	width: 10%;
 	text-align: center;
 	border: 2px solid gray;
 	border-bottom: 1px solid white;
 	background: white;
+	cursor: pointer;
 }
 ul li .acticle{
 	position: absolute;
-	top: 50px;
+	top: 100px;
 	padding: 5%;
 	height: 100px;
 	width: 90%;
@@ -31,27 +34,36 @@ ul li .acticle{
 ul li:nth-child(1) .tab{
 	position: absolute;
 	top: 0;
-	z-index: 4;
+	z-index: 3;	
 }
+ul li:nth-child(1) .tab + .acticle{
+	z-index: 2;
+}
+
 ul li:nth-child(2) .tab{
 	margin-left: 11%;
 	position: absolute;
-	z-index: 4;
-	top: 0;
-}
-ul li:nth-child(3) .tab{
-	margin-left: 22%;
-	position: absolute;
-	z-index: 5;
-	top: 0;
-}
-ul li:nth-child(4) .tab{
-	margin-left: 33%;
-	position: absolute;
-	z-index: 5;
+	z-index: 3;
 	top: 0;
 }
 
-ul li .tab:hover + .acticle{
+ul li:nth-child(3) .tab{
+	margin-left: 22%;
+	position: absolute;
 	z-index: 3;
+	top: 0;
+}
+
+ul li:nth-child(4) .tab{
+	margin-left: 33%;
+	position: absolute;
+	z-index: 3;
+	top: 0;
+}
+ul li .tab:active{
+	line-height: 48px;
+	border-top: 3px solid crimson;
+}
+ul li .tab:active + .acticle{
+	z-index: 2;
 }
