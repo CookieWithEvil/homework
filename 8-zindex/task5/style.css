@@ -11,7 +11,7 @@ body{
 }
 /*form*/
 form{
-	margin: 50px auto 0;
+	margin: 50px auto;
 	min-height: 300px;
 	width: 40%;
 	background: rgba(150,150,150, 0.8);
@@ -67,11 +67,12 @@ input[type="submit"]{
 	border: none;
 	border-radius: 15px;
 }
-p{
+p.sign-up{
 	margin: 30px auto;
+	height: 40px;
 	width: 50%;
 }
-a{
+p.sign-up a{
 	color: black;
 	font-weight: bold;
 }
