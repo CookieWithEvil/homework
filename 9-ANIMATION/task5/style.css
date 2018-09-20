@@ -1,0 +1,42 @@
+html, body{
+	margin: 0;
+	height: 100%;
+	overflow: auto;
+}
+ body{
+ 	position: relative;
+}
+/*modal*/
+.modal{
+	position: absolute;
+	top: -100%;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	transition: top 1s ease 3s;
+}
+.modal .message{
+	position: absolute;
+	top: 100px; left: calc(40%);
+	height: 300px;
+	width: 20%;
+	text-align: center;
+	background: #fff;
+}
+/*button*/
+button{
+	display: block;
+	margin: 20% auto;
+	height: 60px;
+	width: 15%;
+	font-size: 25px;
+	color: brown;
+	background: orange;
+	border: none;
+	cursor: pointer;
+	outline: none;	
+}
+button:hover + .modal{
+	top: 0px;
+	transition: top 1s ease 0.5s; 
+}

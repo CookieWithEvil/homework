@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+}
+
+#square{ 
+	width:100px;height:100px;
+	margin: 200px 30%;	
+	transform-origin:230% center;
+	animation: rotate 3s linear reverse infinite; 
+}
+
+#square:before { 
+	content:''; 
+	position:absolute; 
+	height:100%; 
+	width:100%; 
+	background:blue; 
+	animation: rotate 3s linear infinite; 
+}
+
+@keyframes rotate { 100% { transform:rotate(360deg); } }

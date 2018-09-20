@@ -1,0 +1,49 @@
+html, body{
+	margin: 0;
+	height: 100%;
+	overflow: auto;
+}
+ body{
+ 	position: relative;
+ }
+
+.modal{
+	position: absolute;
+	min-height: 100%;
+	width: 100%;
+	background: white;
+	animation: fade 9s infinite;
+}
+@keyframes fade{
+	45%,95%{
+		background: pink;
+	}	
+	40%,100%{
+		background: white;
+	}
+}
+
+.message{
+	position: absolute;
+	top: -320px; left: calc(50% - 100px);
+	height: 300px;
+	width: 200px;
+	color: #C71585;
+	border: 2px solid #C71585;
+	text-align: center;
+	background: palegreen;
+	animation: jump ease-in-out 9s infinite;
+}
+.message p{
+	display: inline-block;
+	width: 90%;
+}
+
+@keyframes jump{
+	45%,95%{
+		top: 100px;
+	}	
+	40%,100%{
+		top: -320px;
+	}
+}
