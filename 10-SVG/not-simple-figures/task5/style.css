@@ -1,0 +1,39 @@
+svg text{
+	font: bold 40px Arial;
+	fill: gray;
+}
+
+#circle-animation-30,
+#circle-animation-60,
+#circle-animation-90{
+	transform: rotate(-90deg);
+	transform-origin: center center;
+	stroke-dasharray: 1000;
+  	stroke-dashoffset: 1000;
+}
+#circle-animation-30{	
+  	animation: dash-thirty 2s linear forwards;
+}
+@keyframes dash-thirty {
+  to {
+    stroke-dashoffset: 820;
+  }
+}
+
+#circle-animation-60{	
+  	animation: dash-sixty 2s linear forwards;
+}
+@keyframes dash-sixty {
+  to {
+    stroke-dashoffset: 620;
+  }
+}
+
+#circle-animation-90{	
+  	animation: dash-ninty 2s linear forwards;
+}
+@keyframes dash-ninty {
+  to {
+    stroke-dashoffset: 440;
+  }
+}

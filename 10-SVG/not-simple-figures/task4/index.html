@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<svg height="400" width="500" style="border: 1px solid black">
+		<rect id="button-purple" class="button" width="200" height="50" fill="white" stroke-width="4" stroke="purple" x="150" y="50"/>		
+		<rect id="animation-rect-purple" width="50" height="50" x="230" y="50" fill="purple" opacity="0"/>
+    <text id="purple-text" x="200" y="82" fill="purple">CONTINUE</text>
+    <!--  -->
+		<rect width="500" height="200" fill="#333" x="0" y="200"/>
+    <!--  -->
+		<rect id="button-pink" class="button" width="200" height="50" fill="#333" stroke-width="4" stroke="deeppink" x="150" y="250"/>
+    <rect id="animation-rect-pink" width="50" height="50" x="230" y="250" fill="deeppink" opacity="0"/>
+		<text id="pink-text" x="200" y="282" fill="deeppink">CONTINUE</text>
+
+	</svg>
+</body>
+</html>
+
+    <!-- THE 1 ANIMATION
+              <!-- mouseover
+              <animate 
+              xlink:href="#animation-rect"
+              attributeName="width" 
+              from="50"
+              to="200" 
+              dur="3s"
+              begin="mouseover"
+              fill="freeze" 
+              id="rect-anim"/>   
+              <animate 
+              xlink:href="#animation-rect"
+              attributeName="x" 
+              from="230"
+              to="150" 
+              dur="3s"
+              begin="mouseover"
+              fill="freeze" 
+              id="rect-anim"/>  
+              <animate 
+              xlink:href="#animation-rect"
+              attributeName="fill"
+              from="rgba(0,0,0,0)" 
+              to="purple" 
+              dur="3s"
+              begin="mouseover"
+              fill="freeze" 
+              id="rect-anim"/>
+              <!-- mouseout
+              <animate 
+              xlink:href="#animation-rect"
+              attributeName="width"
+              to="50" 
+              dur="3s"
+              begin="mouseout"
+              fill="freeze" 
+              id="rect-anim"/>   
+              <animate 
+              xlink:href="#animation-rect"
+              attributeName="x"
+              to="230" 
+              dur="3s"
+              begin="mouseout"
+              fill="freeze" 
+              id="rect-anim"/>  
+              <animate 
+              xlink:href="#animation-rect"
+              attributeName="fill"
+              to="rgba(0,0,0,0)" 
+              dur="3s"
+              begin="mouseout"
+              fill="freeze" 
+              id="rect-anim"/>  
+    --END OF THE ANIMATION -->

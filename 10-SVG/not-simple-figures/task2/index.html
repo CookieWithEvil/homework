@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>svg</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>  	
+
+  <svg style="border: 1px solid green; margin: 50px calc(50% - 150px); background: #044;" height="300" width="300">
+
+  <path id="arc" d="M 100 100
+    A 50 50 0 0 0 200 200
+    L 200 200
+    A 50 50 0 0 0 100 100 Z" stroke="rgba(255,255,255,0.5)" stroke-width="5" fill="none"/>
+
+    <circle id="circle" r="7" cx="0" cy="0" fill="white"/>
+   
+  <animateMotion 
+           xlink:href="#circle"
+           from="-200"
+           to="-20"
+           dur="3s"
+           begin="0s"
+           fill="freeze"
+           repeatCount="indefinite">
+    <mpath xlink:href="#arc" />
+  </animateMotion>
+  </svg>
+
+  <style type="text/css">
+    #circle{
+      box-shadow: 0 0 10px white;
+    }
+  </style>
+</body>
+</html>

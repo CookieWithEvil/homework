@@ -1,0 +1,35 @@
+body{
+	text-align: center;
+}
+svg text{
+	font: bold 20px Arial;
+}
+
+.button,#animation-rect-purple,#purple-text{
+	cursor: pointer;
+}
+#button-purple + #animation-rect-purple,
+#button-pink + #animation-rect-pink{
+	transition-property: width, transform, opacity;
+	transition-duration: 3s, 3s, 3s;
+}
+text{
+	transition-property: fill;
+	transition-duration: 4s;
+}
+#button-purple:hover + #animation-rect-purple,
+#animation-rect-purple:hover,
+#button-pink:hover + #animation-rect-pink,
+#animation-rect-pink:hover{
+	width: 200px;
+	transform: translate(-80px);
+	opacity: 1;
+}
+.button:hover ~ #purple-text,
+#animation-rect-purple:hover ~ #purple-text,
+#purple-text:hover,
+.button:hover ~ #pink-text,
+#animation-rect-pink:hover ~ #pink-text,
+#pink-text:hover{
+	fill: white;
+}

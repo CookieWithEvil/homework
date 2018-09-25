@@ -1,0 +1,22 @@
+body{
+	text-align: center;
+}
+
+svg{
+	background: #009;
+}
+svg path{
+	stroke-dasharray: 100 30;
+	animation: changeFill 2s  infinite;
+}
+
+@keyframes changeFill{
+	from, to, 40%, 70%{
+		stroke: gold;
+		stroke-dasharray: 100 30;
+	}
+	50%{
+		stroke: red;
+		stroke-dasharray: 1000 0;
+	}
+}
