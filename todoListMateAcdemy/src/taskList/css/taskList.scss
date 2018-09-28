@@ -33,8 +33,8 @@ body{
     box-shadow: 0 5px 5px -5px gray;
     background: #fff;
     z-index: 4;
-    &__previous,
-    &__next{
+    &__previous:enabled,
+    &__next:enabled{
       position: relative;
       top: 205px;
       padding: 3px 5px;
@@ -45,16 +45,26 @@ body{
       color: $textColor;      
       line-height: 20px;
     }
+    &__previous:disabled,
+    &__next:disabled{
+      color: #d7d8da;
+      background: none;
+    }
     &__previous{
+      color: #d7d8da;
+      background: none;
       left: 50px;
+      cursor: not-allowed;
     }
     &__next{
       left: 100px;
     }
-    &__previous:active,
-    &__next:active{
+    &__next:active{      
       background: $verticalLinesColor;
     }   
+    &__next:hover{
+      cursor: pointer;
+    }
     &-clone1{
       width: 248px;
       height: 40px;
