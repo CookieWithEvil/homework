@@ -1,0 +1,78 @@
+body{
+  font-family: $fontFamily;
+}
+
+.taskList {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  padding: 0;
+  color: $textColor;
+
+  &-line{
+    position: absolute;
+    top: 26%; left: 44.5%;
+    height: 241px;
+    width: 1px;
+    border-right: 1px solid $verticalLinesColor;
+    z-index: 3;
+  }
+
+  &-wrapper {
+    width: 251px;
+    height: 241px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    border: 2px solid $mainBorderColor;
+    &__addTask{
+      position: relative;
+      top: 216px; left: 75%;
+      padding: 3px;
+      background: white;
+      color: $textColor;
+      border: 2px solid $borderColor;
+      outline: 0;
+      cursor: pointer;
+    }
+    &__addTask:active{
+      background: $verticalLinesColor;
+    }
+
+  }
+  &-item {
+    padding: 5px 0 5px 16%;
+    list-style: none;
+    width: 84%;
+    border-bottom: 1px solid $borderColor;
+    input[type=checkbox]{
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      width: 0;
+      &:checked + .taskList-item__checkbox {
+        border-color: $mainBorderColor;
+        background: $mainBorderColor;
+      }      
+      &:checked + .taskList-item__text{
+        text-decoration: line-through;
+      }
+    }
+
+    &__checkbox {
+      float: left;
+      width: 17px;
+      height: 17px;
+      display: inline-block;
+      border: 1px solid $borderColor;
+    }
+
+    &__text {
+      @include fontSize(12);
+    }
+  }
+}
