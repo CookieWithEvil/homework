@@ -1,2 +1,1 @@
-Done:
-# https://cookiewithevil.github.io/homework/todoListMateAcdemy/dist/
+# Done: https://cookiewithevil.github.io/homework/todoListMateAcdemy/dist/
