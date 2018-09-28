@@ -11,17 +11,17 @@ body{
   z-index: 1;
   padding: 0;
   color: $textColor;
-
   &-line{
     position: absolute;
-    left: 45.5%;
+    left: calc(41% + 31px);
     top: 50%;
     height: 241px;
-    width: 1px;
+    width: 2px;
     border-right: 1px solid $verticalLinesColor;
+    border-left: 1px solid $verticalLinesColor;
     transform: translate(-50% ,-50%);
+    z-index: 5;
   }
-
   &-wrapper {
     width: 251px;
     height: 241px;
@@ -29,43 +29,110 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50% ,-50%);
-    border: 2px solid $mainBorderColor;
-    &__addTask{
+    border: 1px solid $mainBorderColor;
+    box-shadow: 0 5px 5px -5px gray;
+    background: #fff;
+    z-index: 4;
+    &__previous,
+    &__next{
       position: relative;
-      top: 216px; left: 75%;
-      padding: 3px;
-      background: white;
-      color: $textColor;
-      border: 2px solid $borderColor;
+      top: 205px;
+      padding: 3px 5px;
       outline: 0;
       cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      color: $textColor;      
+      line-height: 20px;
     }
-    &__addTask:active{
+    &__previous{
+      left: 50px;
+    }
+    &__next{
+      left: 100px;
+    }
+    &__previous:active,
+    &__next:active{
       background: $verticalLinesColor;
+    }   
+    &-clone1{
+      width: 248px;
+      height: 40px;
+      position: absolute;   
+      left: 50%;
+      top: 67.9%;
+      transform: translate(-50% ,-68%);      
+      z-index: 3;
+      background: white;
+      box-shadow: 0 5px 5px -5px gray;
     }
-
+    &-clone2{
+      width: 239px;
+      height: 40px;
+      position: absolute;   
+      left: 50%;
+      top: 68.5%;
+      transform: translate(-50% ,-68%);      
+      z-index: 2;
+      background: white;
+      box-shadow: 0 5px 5px -5px gray;
+    }
+    &-clone3{
+      width: 230px;
+      height: 40px;
+      position: absolute;    
+      left: 50%;
+      top: 69%;
+      transform: translate(-50% ,-68%);      
+      z-index: 1;
+      background: white;
+      box-shadow: 0 5px 5px -5px gray;
+    }
   }
-  &-item {
-    padding: 5px 0 5px 16%;
+
+  &-item,&-itemInterface {
+    padding: 4px 10px;
     list-style: none;
-    width: 84%;
-    border-bottom: 1px solid $borderColor;
+    width: calc(100% - 20px);
+    border-bottom: 1px solid $mainBorderColor;
     input[type=checkbox]{
       visibility: hidden;
       opacity: 0;
       height: 0;
       width: 0;
+
       &:checked + .taskList-item__checkbox {
-        border-color: $mainBorderColor;
-        background: $mainBorderColor;
-      }      
-      &:checked + .taskList-item__text{
-        text-decoration: line-through;
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        background: #fff;
+        border: none;
+        border: 1px solid $textColor; 
+      }
+      & + .taskList-item__checkbox:before {
+        content: '';
+        margin-right: 6px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 10px;
+        height: 10px;
+        background: white;
+      }
+      &:checked + .taskList-item__checkbox:after {
+        content:  '\2713 ';
+        position: absolute;
+        left: 3px;
+        top: -3px;
+        background: white;
+        width: 0px;
+        height: 0px;
+        transform: rotate(360deg);
       }
     }
 
     &__checkbox {
       float: left;
+      top: -2px;
       width: 17px;
       height: 17px;
       display: inline-block;
@@ -74,6 +141,26 @@ body{
 
     &__text {
       @include fontSize(12);
+    }
+  }
+  &-itemInterface{
+    margin-top: -10px;
+    &__button{
+      margin-left: 10px;
+      color: $textColor;
+      border: none;
+      background: none;
+      outline: 0;
+    }
+    &__button:hover{
+      cursor: pointer;
+    }
+    #addTask{
+      font-weight: bold;
+    }
+    #settings{
+      float: right;
+      margin-right: 15px;
     }
   }
 }
