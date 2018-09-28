@@ -1,3 +1,7 @@
+Done:
+# https://cookiewithevil.github.io/homework/todoListMateAcdemy/dist/
+
+
 # Goal: Create an app TodoList
 
 Steps:
