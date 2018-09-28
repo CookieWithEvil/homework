@@ -14,11 +14,12 @@ body{
 
   &-line{
     position: absolute;
-    top: 26%; left: 44.5%;
+    left: 45.5%;
+    top: 50%;
     height: 241px;
     width: 1px;
     border-right: 1px solid $verticalLinesColor;
-    z-index: 3;
+    transform: translate(-50% ,-50%);
   }
 
   &-wrapper {
