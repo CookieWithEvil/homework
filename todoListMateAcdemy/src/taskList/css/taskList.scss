@@ -13,7 +13,7 @@ body{
   color: $textColor;
   &-line{
     position: absolute;
-    left: calc(41% + 31px);
+    left: calc(50% - 90px);
     top: 50%;
     height: 241px;
     width: 2px;
@@ -70,8 +70,8 @@ body{
       height: 40px;
       position: absolute;   
       left: 50%;
-      top: 68%;
-      transform: translate(-50% ,-68%);      
+      top: calc(50% + 106px);
+      transform: translate(-50% ,-50%);      
       z-index: 3;
       background: #fff;
       box-shadow: 0 5px 5px -5px gray;
@@ -81,10 +81,10 @@ body{
       height: 40px;
       position: absolute;   
       left: 50%;
-      top: calc(68% + 3px);
-      transform: translate(-50% ,-68%);      
+      top: calc(50% + 110px);
+      transform: translate(-50% ,-50%);      
       z-index: 2;
-      background: white;
+      background: #fff;
       box-shadow: 0 5px 5px -5px gray;
     }
     &-clone3{
@@ -92,10 +92,10 @@ body{
       height: 40px;
       position: absolute;    
       left: 50%;
-      top: calc(68% + 6px);
-      transform: translate(-50% ,-68%);      
+      top: calc(50% + 114px);
+      transform: translate(-50% ,-50%);      
       z-index: 1;
-      background: white;
+      background: #fff;
       box-shadow: 0 5px 5px -5px gray;
     }
   }
@@ -111,6 +111,9 @@ body{
       height: 0;
       width: 0;
 
+      &:checked ~ .taskList-item__text {
+        text-decoration: line-through;
+      }
       &:checked + .taskList-item__checkbox {
         position: relative;
         cursor: pointer;
