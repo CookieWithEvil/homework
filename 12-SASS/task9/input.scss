@@ -1,0 +1,44 @@
+//Styling
+body{
+	text-align: center;
+}
+button{
+	color: white;
+	font-weight: bold;
+	border: none;
+}
+//Maps and Loops
+$styles: (
+	success: #70b771,
+	warning: #faa922,
+	info: #52abcb,
+	default: #1E90FF,
+	error: #cb5f55
+);
+$sizes: (
+	big: 80px,
+	middle: 50px,
+	small: 30px
+);
+
+@each $style, $color in $styles{
+	##{$style}{
+		background: $color;
+	}
+}
+
+@for $i from 1 through 5{
+	@if ($i % 2 == 0){
+		button:nth-child(#{$i}){
+			height: map-get($sizes, middle);
+		}
+	}@else if ($i % 3 == 0){
+		button:nth-child(#{$i}){
+			height: map-get($sizes, small);
+		}
+	}@else{
+		button:nth-child(#{$i}){
+			height: map-get($sizes, big);
+		}
+	}
+}

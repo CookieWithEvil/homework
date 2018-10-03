@@ -1,0 +1,65 @@
+@import "vars.scss";
+
+
+button.multipurpose {
+	display: block;
+	margin: auto;
+	padding: 0 $mainSize;
+	height: 40px;
+	color: white;
+	background: $buttonBackColor;
+	border: none;
+	outline: none;
+}
+button.multipurpose:hover{
+	box-shadow: 0 0 5px green;
+	cursor: pointer;
+}
+button.multipurpose:active{
+	background: $buttonBackActiveColor;
+}
+button.multipurpose:focus{
+	color: $backColor;
+}
+
+.tasks__wrapper{
+	margin: 5% auto;
+	width: 15%;
+	background: $backColor;
+	border: 1px solid green;
+	.tasks__list{
+		padding: $mainSize;
+		font-family: $fontFamily;
+		color: $textColor;
+		.tasks__item{
+			margin: 20px auto;
+			list-style: none;
+			.tasks__item-remove{
+				display: inline-block;
+				float: left;
+				height: 30px; width: 30px;
+			}
+			.tasks__item-remove:before,
+			.tasks__item-remove:after {
+			    content: "";
+			    position: absolute;
+			    margin: 10px 2px 0;
+			    width: 26px;
+			    height: 4px;
+			    background: #e62f57;
+			}
+
+			.tasks__item-remove:before {
+			    webkit-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+			.tasks__item-remove:after {
+			    webkit-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			}
+			.tasks__item-text{
+				line-height: 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.ledder{
+	margin: auto;
+	height: 400px;
+	width: 400px;
+	border-bottom: 2px solid brown;
+	border-left: 2px solid brown;
+	.stair{
+		position: relative;
+		height: 48px;
+		width: 48px;
+		border-top: 2px solid brown;
+		border-right: 2px solid brown;
+	}
+}
+
+@for $i from 1 through 8{
+	.stair:nth-child(#{$i}){
+		left: ($i - 1)*50+ px;
+	}
+}

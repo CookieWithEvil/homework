@@ -1,0 +1,41 @@
+.rules__item:nth-child(1) {
+  font-size: 13px;
+  color: #2b5a8e;
+}
+
+.rules__item:nth-child(2) {
+  font-size: 14px;
+  color: #4e8439;
+}
+
+.rules__item:nth-child(3) {
+  font-size: 15px;
+  color: #96039a;
+}
+
+.rules__item:nth-child(4) {
+  font-size: 16px;
+  color: #66ac19;
+}
+
+.rules__item:nth-child(5) {
+  font-size: 17px;
+  color: #f76f95;
+}
+
+.rules__item:nth-child(6) {
+  font-size: 18px;
+  color: #40e877;
+}
+
+.rules__item:nth-child(7) {
+  font-size: 19px;
+  color: #8fdfee;
+}
+
+.rules__item:nth-child(8) {
+  font-size: 20px;
+  color: #1c1104;
+}
+
+/*# sourceMappingURL=style.css.map */

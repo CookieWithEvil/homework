@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+#success {
+  background: #70b771;
+}
+
+#warning {
+  background: #faa922;
+}
+
+#info {
+  background: #52abcb;
+}
+
+#default {
+  background: #1E90FF;
+}
+
+#error {
+  background: #cb5f55;
+}
+
+button:nth-child(1) {
+  height: 80px;
+}
+
+button:nth-child(2) {
+  height: 50px;
+}
+
+button:nth-child(3) {
+  height: 30px;
+}
+
+button:nth-child(4) {
+  height: 50px;
+}
+
+button:nth-child(5) {
+  height: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */

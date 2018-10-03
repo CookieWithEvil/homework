@@ -1,0 +1,86 @@
+table {
+  border-collapse: collapse;
+}
+table td {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+}
+
+td:nth-child(1) {
+  background: yellow;
+}
+
+td:nth-child(2) {
+  background: blue;
+}
+
+td:nth-child(3) {
+  background: yellow;
+}
+
+td:nth-child(4) {
+  background: blue;
+}
+
+td:nth-child(5) {
+  background: yellow;
+}
+
+td:nth-child(5) {
+  background: black;
+}
+
+td:nth-child(6) {
+  background: blue;
+}
+
+td:nth-child(7) {
+  background: yellow;
+}
+
+td:nth-child(8) {
+  background: blue;
+}
+
+td:nth-child(8) {
+  background: green;
+}
+
+td:nth-child(9) {
+  background: yellow;
+}
+
+td:nth-child(10) {
+  background: blue;
+}
+
+td:nth-child(10) {
+  background: black;
+}
+
+td:nth-child(11) {
+  background: yellow;
+}
+
+td:nth-child(12) {
+  background: blue;
+}
+
+td:nth-child(13) {
+  background: yellow;
+}
+
+td:nth-child(14) {
+  background: blue;
+}
+
+td:nth-child(15) {
+  background: yellow;
+}
+
+td:nth-child(15) {
+  background: black;
+}
+
+/*# sourceMappingURL=style.css.map */

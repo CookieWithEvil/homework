@@ -1,0 +1,48 @@
+.ledder {
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  border-bottom: 2px solid brown;
+  border-left: 2px solid brown;
+}
+.ledder .stair {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  border-top: 2px solid brown;
+  border-right: 2px solid brown;
+}
+
+.stair:nth-child(1) {
+  left: 0px;
+}
+
+.stair:nth-child(2) {
+  left: 50px;
+}
+
+.stair:nth-child(3) {
+  left: 100px;
+}
+
+.stair:nth-child(4) {
+  left: 150px;
+}
+
+.stair:nth-child(5) {
+  left: 200px;
+}
+
+.stair:nth-child(6) {
+  left: 250px;
+}
+
+.stair:nth-child(7) {
+  left: 300px;
+}
+
+.stair:nth-child(8) {
+  left: 350px;
+}
+
+/*# sourceMappingURL=style.css.map */

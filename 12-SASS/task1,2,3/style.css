@@ -1,0 +1,67 @@
+button.multipurpose {
+  display: block;
+  margin: auto;
+  padding: 0 14px;
+  height: 40px;
+  color: white;
+  background: #2a602d;
+  border: none;
+  outline: none;
+}
+
+button.multipurpose:hover {
+  box-shadow: 0 0 5px green;
+  cursor: pointer;
+}
+
+button.multipurpose:active {
+  background: #334432;
+}
+
+button.multipurpose:focus {
+  color: #ffcccc;
+}
+
+.tasks__wrapper {
+  margin: 5% auto;
+  width: 15%;
+  background: #ffcccc;
+  border: 1px solid green;
+}
+.tasks__wrapper .tasks__list {
+  padding: 14px;
+  font-family: "Helvetica";
+  color: #333;
+}
+.tasks__wrapper .tasks__list .tasks__item {
+  margin: 20px auto;
+  list-style: none;
+}
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove {
+  display: inline-block;
+  float: left;
+  height: 30px;
+  width: 30px;
+}
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove:before,
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove:after {
+  content: "";
+  position: absolute;
+  margin: 10px 2px 0;
+  width: 26px;
+  height: 4px;
+  background: #e62f57;
+}
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove:before {
+  webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove:after {
+  webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-text {
+  line-height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

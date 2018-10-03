@@ -1,0 +1,48 @@
+.wrapper {
+  margin: auto;
+  width: 300px;
+  font-family: Arial;
+}
+.wrapper .block {
+  margin-bottom: 5px;
+  padding: 13px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+}
+.wrapper .block i {
+  float: left;
+  margin-right: 10px;
+}
+.wrapper .block .text h4, .wrapper .block .text p {
+  margin: 0;
+}
+.wrapper #info i {
+  line-height: 20px;
+}
+
+#success {
+  color: #fff;
+  background-color: #70b771;
+}
+
+#info {
+  color: #fff;
+  background-color: #55aac6;
+}
+
+#warning {
+  color: #fff;
+  background-color: #faa922;
+}
+
+#error {
+  color: #fff;
+  background-color: #cb5f53;
+}
+
+#custom p {
+  color: #c00;
+}
+
+/*# sourceMappingURL=style.css.map */

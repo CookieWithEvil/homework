@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Poppins;
+  src: url("saas/fonts/Poppins-Regular.otf");
+}
+/*--------------------------- Color variations ----------------------*/
+@font-face {
+  font-family: fontAwesome;
+  src: url("saas/Saas - Doc/fonts/fontawesome-webfont.ttf");
+}
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove {
+  height: 32px;
+  width: 10%;
+  background: none;
+  border: 1px solid #3bacf0;
+  text-align: center;
+}
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove:before {
+  content: "";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: #f33;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("saas/fonts/Poppins-Regular.otf");
+}
+/*--------------------------- Color variations ----------------------*/
+.tasks__wrapper {
+  margin: 5% auto;
+  width: 15%;
+  background: #88d200;
+  border: 1px solid #3bacf0;
+}
+.tasks__wrapper .tasks__list {
+  padding: 14px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #338833;
+  border-collapse: collapse;
+}
+.tasks__wrapper .tasks__list .tasks__item {
+  margin: 20px auto;
+}
+.tasks__wrapper .tasks__list .tasks__item .tasks__item-text {
+  line-height: 25px;
+  border: 1px solid #3bacf0;
+  width: 33%;
+}
+
+/*# sourceMappingURL=style.css.map */
