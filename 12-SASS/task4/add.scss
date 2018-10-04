@@ -7,13 +7,13 @@
 .tasks__wrapper{
 	.tasks__list{
 		.tasks__item{
-			.tasks__item-remove{
-				height: 32px; width: 10%;
+			&-remove{
+				height: 32px;
 				background: none;
 				border: 1px solid $serondary-color;
 				text-align: center;
 			}
-			.tasks__item-remove:before {
+			&-remove:before {
 			    content: "\f00d";
 			    font-family: FontAwesome;
 			    font-style: normal;

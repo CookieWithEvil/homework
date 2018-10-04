@@ -8,14 +8,13 @@
   font-family: fontAwesome;
   src: url("saas/Saas - Doc/fonts/fontawesome-webfont.ttf");
 }
-.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove {
+.tasks__wrapper .tasks__list .tasks__item-remove {
   height: 32px;
-  width: 10%;
   background: none;
   border: 1px solid #3bacf0;
   text-align: center;
 }
-.tasks__wrapper .tasks__list .tasks__item .tasks__item-remove:before {
+.tasks__wrapper .tasks__list .tasks__item-remove:before {
   content: "";
   font-family: FontAwesome;
   font-style: normal;
@@ -31,7 +30,7 @@
 /*--------------------------- Color variations ----------------------*/
 .tasks__wrapper {
   margin: 5% auto;
-  width: 15%;
+  width: 20%;
   background: #88d200;
   border: 1px solid #3bacf0;
 }
@@ -44,8 +43,9 @@
 }
 .tasks__wrapper .tasks__list .tasks__item {
   margin: 20px auto;
+  width: 100%;
 }
-.tasks__wrapper .tasks__list .tasks__item .tasks__item-text {
+.tasks__wrapper .tasks__list .tasks__item-text {
   line-height: 25px;
   border: 1px solid #3bacf0;
   width: 33%;

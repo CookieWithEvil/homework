@@ -4,7 +4,7 @@
 
 .tasks__wrapper{
 	margin: 5% auto;
-	width: 15%;
+	width: 20%;
 	background: $primary-color;
 	border: 1px solid $serondary-color;
 	.tasks__list{
@@ -15,7 +15,8 @@
 		border-collapse: collapse;		
 		.tasks__item{
 			margin: 20px auto;
-			.tasks__item-text{
+			width: 100%;
+			&-text{
 				line-height: 25px;
 				border: 1px solid $serondary-color;
 				width: 33%;
