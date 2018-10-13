@@ -1,0 +1,432 @@
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  background: #fec107;
+  font-family: Arial;
+  font-size: 16px; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 52px auto;
+  padding: 44px 60px;
+  min-height: 519px;
+  width: 600px;
+  color: #929292;
+  background: #fff;
+  box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3); }
+  .wrapper .formLogin_header, .wrapper .formRegistration_header {
+    margin: 0 0 14px 0;
+    color: #1c1c1c; }
+  .wrapper .formLogin {
+    min-height: 50px;
+    overflow: auto;
+    width: 200px; }
+    .wrapper .formLogin_inputUsername, .wrapper .formLogin_inputPassword {
+      height: 20px;
+      border: 1px solid #EEE;
+      box-shadow: inset 0px 1px 5px -1px #EEE;
+      border-radius: 3px; }
+      .wrapper .formLogin_inputUsername-title, .wrapper .formLogin_inputPassword-title {
+        margin: 12px 0 3px;
+        font-size: 0.6rem; }
+      .wrapper .formLogin_inputUsername input[type="text"],
+      .wrapper .formLogin_inputUsername input[type="password"], .wrapper .formLogin_inputPassword input[type="text"],
+      .wrapper .formLogin_inputPassword input[type="password"] {
+        float: left;
+        height: 13px;
+        width: 85%;
+        color: #1c1c1c;
+        border: none;
+        background: none; }
+      .wrapper .formLogin_inputUsername i, .wrapper .formLogin_inputPassword i {
+        float: right;
+        margin-right: 5px;
+        line-height: 20px;
+        font-size: 0.8rem;
+        vertical-align: middle; }
+    .wrapper .formLogin_submit {
+      margin: 11px 0 15px; }
+      .wrapper .formLogin_submit input[type="submit"] {
+        float: left;
+        height: 16px;
+        width: 93px;
+        color: #fff;
+        font-size: 0.6rem;
+        background: #ffbd0a;
+        border: none; }
+      .wrapper .formLogin_submit-forgotPassword {
+        float: right;
+        font-size: 0.5rem;
+        line-height: 16px;
+        color: #656565;
+        text-decoration: none; }
+    .wrapper .formLogin_divider {
+      margin: 40px 0 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .wrapper .formLogin_divider-line {
+        border-bottom: 1px solid #ececec;
+        height: 4px;
+        width: 70px; }
+      .wrapper .formLogin_divider span {
+        font-size: 0.5rem; }
+    .wrapper .formLogin_socialButtons {
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .wrapper .formLogin_socialButtons-twitter, .wrapper .formLogin_socialButtons-facebook, .wrapper .formLogin_socialButtons-google {
+        display: inline-block;
+        height: 20px;
+        width: 31%;
+        text-decoration: none; }
+        .wrapper .formLogin_socialButtons-twitter i, .wrapper .formLogin_socialButtons-facebook i, .wrapper .formLogin_socialButtons-google i {
+          display: inline-block;
+          float: left;
+          margin: 0;
+          line-height: 20px;
+          width: 20px;
+          color: #fff;
+          font-size: 0.8rem;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.2); }
+        .wrapper .formLogin_socialButtons-twitter span, .wrapper .formLogin_socialButtons-facebook span, .wrapper .formLogin_socialButtons-google span {
+          display: inline-block;
+          margin-left: 3px;
+          color: white;
+          font-size: 0.5rem; }
+      .wrapper .formLogin_socialButtons-twitter {
+        background: #25b7e0; }
+      .wrapper .formLogin_socialButtons-facebook {
+        background: #3d59a3; }
+      .wrapper .formLogin_socialButtons-google {
+        background: #da4735; }
+  .wrapper .formRegistration {
+    width: 300px; }
+    .wrapper .formRegistration_firstName, .wrapper .formRegistration_lastName, .wrapper .formRegistration_password, .wrapper .formRegistration_passwordConfirm, .wrapper .formRegistration_telNumber, .wrapper .formRegistration_email, .wrapper .formRegistration_emailConfirm {
+      margin: 0 0 7px;
+      display: block;
+      width: 100%; }
+      .wrapper .formRegistration_firstName-title, .wrapper .formRegistration_lastName-title, .wrapper .formRegistration_password-title, .wrapper .formRegistration_passwordConfirm-title, .wrapper .formRegistration_telNumber-title, .wrapper .formRegistration_email-title, .wrapper .formRegistration_emailConfirm-title {
+        font-size: 0.6rem;
+        line-height: 20px; }
+      .wrapper .formRegistration_firstName input[type="text"],
+      .wrapper .formRegistration_firstName input[type="password"],
+      .wrapper .formRegistration_firstName input[type="email"], .wrapper .formRegistration_lastName input[type="text"],
+      .wrapper .formRegistration_lastName input[type="password"],
+      .wrapper .formRegistration_lastName input[type="email"], .wrapper .formRegistration_password input[type="text"],
+      .wrapper .formRegistration_password input[type="password"],
+      .wrapper .formRegistration_password input[type="email"], .wrapper .formRegistration_passwordConfirm input[type="text"],
+      .wrapper .formRegistration_passwordConfirm input[type="password"],
+      .wrapper .formRegistration_passwordConfirm input[type="email"], .wrapper .formRegistration_telNumber input[type="text"],
+      .wrapper .formRegistration_telNumber input[type="password"],
+      .wrapper .formRegistration_telNumber input[type="email"], .wrapper .formRegistration_email input[type="text"],
+      .wrapper .formRegistration_email input[type="password"],
+      .wrapper .formRegistration_email input[type="email"], .wrapper .formRegistration_emailConfirm input[type="text"],
+      .wrapper .formRegistration_emailConfirm input[type="password"],
+      .wrapper .formRegistration_emailConfirm input[type="email"] {
+        float: right;
+        height: 15px;
+        width: 65%;
+        color: #1c1c1c;
+        border: 1px solid #EEE;
+        box-shadow: inset 0px 1px 5px -1px #EEE;
+        border-radius: 3px; }
+    .wrapper .formRegistration_telNumber {
+      margin-top: 10px; }
+    .wrapper .formRegistration_date-title {
+      margin-right: 40px;
+      font-size: 0.6rem; }
+    .wrapper .formRegistration_date input[name="month"],
+    .wrapper .formRegistration_date input[name="day"],
+    .wrapper .formRegistration_date input[name="year"] {
+      height: 18px;
+      color: #1c1c1c;
+      font-size: 0.6rem;
+      border: 1px solid #EEE;
+      box-shadow: inset 0px 1px 5px -1px #EEE;
+      border-radius: 3px; }
+    .wrapper .formRegistration_date input[name="month"],
+    .wrapper .formRegistration_date input[name="day"] {
+      width: 31px; }
+    .wrapper .formRegistration_date input[name="year"] {
+      width: 40px; }
+    .wrapper .formRegistration_gender-title {
+      font-size: 0.6rem; }
+    .wrapper .formRegistration_gender select {
+      height: 23px;
+      width: 30px;
+      color: #1c1c1c;
+      border: 1px solid #EEE;
+      box-shadow: inset 0px 1px 5px -1px #EEE;
+      border-radius: 3px; }
+    .wrapper .formRegistration_adress-title {
+      font-size: 0.6rem; }
+    .wrapper .formRegistration_adress textarea {
+      float: right;
+      height: 40px;
+      width: calc(65% - 4px);
+      color: #1c1c1c;
+      border: 1px solid #EEE;
+      box-shadow: inset 0px 1px 5px -1px #EEE;
+      border-radius: 3px; }
+    .wrapper .formRegistration_city, .wrapper .formRegistration_state {
+      display: inline-block;
+      float: left;
+      margin: 10px 0 0 8px;
+      width: 31%;
+      color: #1c1c1c; }
+      .wrapper .formRegistration_city-title, .wrapper .formRegistration_state-title {
+        margin: 0 0 5px;
+        display: block;
+        font-size: 0.6rem; }
+      .wrapper .formRegistration_city input[type="text"], .wrapper .formRegistration_state input[type="text"] {
+        width: 100%;
+        border: 1px solid #EEE;
+        box-shadow: inset 0px 1px 5px -1px #EEE;
+        border-radius: 3px; }
+    .wrapper .formRegistration_city {
+      margin-left: 103px; }
+    .wrapper .formRegistration_zipCode, .wrapper .formRegistration_country {
+      display: block;
+      margin: 5px 0 0 103px;
+      width: 65%;
+      color: #1c1c1c; }
+      .wrapper .formRegistration_zipCode-title, .wrapper .formRegistration_country-title {
+        margin: 0 0 10px;
+        font-size: 0.6rem; }
+      .wrapper .formRegistration_zipCode input[type="text"], .wrapper .formRegistration_country input[type="text"] {
+        width: calc(100% - 4px);
+        border: 1px solid #EEE;
+        box-shadow: inset 0px 1px 5px -1px #EEE;
+        border-radius: 3px; }
+    .wrapper .formRegistration_zipCode {
+      margin-top: 84px; }
+    .wrapper .formRegistration_termsConditions {
+      display: block;
+      margin: 5px 0 0 103px; }
+      .wrapper .formRegistration_termsConditions input[type="checkbox"] {
+        float: left;
+        margin: 5px 5px 0 0; }
+      .wrapper .formRegistration_termsConditions-title {
+        font-size: 0.6rem; }
+    .wrapper .formRegistration_signUp {
+      margin: 8px 0 0 103px;
+      height: 20px;
+      width: 35%;
+      color: #FFF;
+      font-size: 0.6rem;
+      background: #75d83f;
+      border: none; }
+  .wrapper .conditions {
+    margin: 20px auto 50px;
+    padding: 5px;
+    min-height: 36px;
+    min-width: 230px;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 2px 10px 10px -8px rgba(0, 0, 0, 0.75); }
+    .wrapper .conditions_text {
+      text-align: center;
+      font-size: 0.6rem; }
+      .wrapper .conditions_text a {
+        color: #929fa8;
+        text-decoration: none; }
+
+@media all and (max-width: 800px) {
+  .wrapper {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    min-height: 519px;
+    width: 95%;
+    color: #929292;
+    background: #fff;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3); }
+    .wrapper .formLogin_header, .wrapper .formRegistration_header {
+      color: #1c1c1c;
+      font-size: 1.3rem;
+      text-align: center; }
+    .wrapper .formLogin {
+      margin: auto;
+      min-height: 400px;
+      width: 80%; }
+      .wrapper .formLogin_inputUsername, .wrapper .formLogin_inputPassword {
+        height: 40px; }
+        .wrapper .formLogin_inputUsername-title, .wrapper .formLogin_inputPassword-title {
+          margin: 12px 0 3px;
+          font-size: 0.8rem; }
+        .wrapper .formLogin_inputUsername input[type="text"],
+        .wrapper .formLogin_inputUsername input[type="password"], .wrapper .formLogin_inputPassword input[type="text"],
+        .wrapper .formLogin_inputPassword input[type="password"] {
+          height: 35px; }
+        .wrapper .formLogin_inputUsername i, .wrapper .formLogin_inputPassword i {
+          margin-right: 10px;
+          line-height: 40px; }
+      .wrapper .formLogin_submit {
+        margin: 11px 0 15px; }
+        .wrapper .formLogin_submit input[type="submit"] {
+          float: left;
+          height: 60px;
+          width: 80px;
+          color: #fff;
+          font-size: 1rem;
+          background: #ffbd0a;
+          border: none; }
+        .wrapper .formLogin_submit-forgotPassword {
+          float: right;
+          font-size: 1.1rem;
+          line-height: 60px;
+          color: #656565;
+          text-decoration: none; }
+      .wrapper .formLogin_divider {
+        margin: 100px 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+        .wrapper .formLogin_divider-line {
+          border-bottom: 1px solid #ececec;
+          height: 4px;
+          width: 30%; }
+        .wrapper .formLogin_divider span {
+          font-size: 0.8rem; }
+      .wrapper .formLogin_socialButtons {
+        margin: 10px auto 0;
+        display: flex;
+        justify-content: space-around;
+        width: 30%; }
+        .wrapper .formLogin_socialButtons-twitter, .wrapper .formLogin_socialButtons-facebook, .wrapper .formLogin_socialButtons-google {
+          display: inline-block;
+          height: 50px;
+          width: 50px;
+          text-decoration: none; }
+          .wrapper .formLogin_socialButtons-twitter i, .wrapper .formLogin_socialButtons-facebook i, .wrapper .formLogin_socialButtons-google i {
+            display: inline-block;
+            float: left;
+            margin: 0;
+            line-height: 50px;
+            width: 50px;
+            color: #fff;
+            font-size: 1rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2); }
+          .wrapper .formLogin_socialButtons-twitter span, .wrapper .formLogin_socialButtons-facebook span, .wrapper .formLogin_socialButtons-google span {
+            display: inline-block;
+            margin-left: 3px;
+            color: white;
+            font-size: 0.5rem; }
+        .wrapper .formLogin_socialButtons-twitter {
+          background: #25b7e0; }
+        .wrapper .formLogin_socialButtons-facebook {
+          background: #3d59a3; }
+        .wrapper .formLogin_socialButtons-google {
+          background: #da4735; }
+    .wrapper .formRegistration {
+      margin: auto;
+      min-height: 400px;
+      width: 80%; }
+      .wrapper .formRegistration_firstName, .wrapper .formRegistration_lastName, .wrapper .formRegistration_password, .wrapper .formRegistration_passwordConfirm, .wrapper .formRegistration_telNumber, .wrapper .formRegistration_email, .wrapper .formRegistration_emailConfirm, .wrapper .formRegistration_city, .wrapper .formRegistration_state, .wrapper .formRegistration_zipCode, .wrapper .formRegistration_country {
+        display: block;
+        margin: 15px 0 0;
+        width: 100%; }
+        .wrapper .formRegistration_firstName-title, .wrapper .formRegistration_lastName-title, .wrapper .formRegistration_password-title, .wrapper .formRegistration_passwordConfirm-title, .wrapper .formRegistration_telNumber-title, .wrapper .formRegistration_email-title, .wrapper .formRegistration_emailConfirm-title, .wrapper .formRegistration_city-title, .wrapper .formRegistration_state-title, .wrapper .formRegistration_zipCode-title, .wrapper .formRegistration_country-title {
+          display: block;
+          margin: 5px 0;
+          font-size: 1rem;
+          line-height: 40px; }
+        .wrapper .formRegistration_firstName input[type="text"],
+        .wrapper .formRegistration_firstName input[type="password"],
+        .wrapper .formRegistration_firstName input[type="email"], .wrapper .formRegistration_lastName input[type="text"],
+        .wrapper .formRegistration_lastName input[type="password"],
+        .wrapper .formRegistration_lastName input[type="email"], .wrapper .formRegistration_password input[type="text"],
+        .wrapper .formRegistration_password input[type="password"],
+        .wrapper .formRegistration_password input[type="email"], .wrapper .formRegistration_passwordConfirm input[type="text"],
+        .wrapper .formRegistration_passwordConfirm input[type="password"],
+        .wrapper .formRegistration_passwordConfirm input[type="email"], .wrapper .formRegistration_telNumber input[type="text"],
+        .wrapper .formRegistration_telNumber input[type="password"],
+        .wrapper .formRegistration_telNumber input[type="email"], .wrapper .formRegistration_email input[type="text"],
+        .wrapper .formRegistration_email input[type="password"],
+        .wrapper .formRegistration_email input[type="email"], .wrapper .formRegistration_emailConfirm input[type="text"],
+        .wrapper .formRegistration_emailConfirm input[type="password"],
+        .wrapper .formRegistration_emailConfirm input[type="email"], .wrapper .formRegistration_city input[type="text"],
+        .wrapper .formRegistration_city input[type="password"],
+        .wrapper .formRegistration_city input[type="email"], .wrapper .formRegistration_state input[type="text"],
+        .wrapper .formRegistration_state input[type="password"],
+        .wrapper .formRegistration_state input[type="email"], .wrapper .formRegistration_zipCode input[type="text"],
+        .wrapper .formRegistration_zipCode input[type="password"],
+        .wrapper .formRegistration_zipCode input[type="email"], .wrapper .formRegistration_country input[type="text"],
+        .wrapper .formRegistration_country input[type="password"],
+        .wrapper .formRegistration_country input[type="email"] {
+          height: 40px;
+          width: 100%; }
+      .wrapper .formRegistration_date {
+        display: block;
+        float: left;
+        margin: 10px 0 0;
+        width: 100%; }
+        .wrapper .formRegistration_date-title {
+          margin-right: 75px;
+          line-height: 50px;
+          font-size: 1rem; }
+        .wrapper .formRegistration_date input[name="month"],
+        .wrapper .formRegistration_date input[name="day"],
+        .wrapper .formRegistration_date input[name="year"] {
+          height: 40px;
+          font-size: 0.8rem;
+          border: 1px solid #EEE;
+          box-shadow: inset 0px 1px 5px -1px #EEE;
+          border-radius: 3px; }
+        .wrapper .formRegistration_date input[name="month"],
+        .wrapper .formRegistration_date input[name="day"] {
+          width: 60px; }
+        .wrapper .formRegistration_date input[name="year"] {
+          width: 80px; }
+      .wrapper .formRegistration_gender {
+        display: block;
+        float: right;
+        margin: 10px 0 0;
+        width: 100%; }
+        .wrapper .formRegistration_gender-title {
+          line-height: 49px;
+          font-size: 1rem; }
+        .wrapper .formRegistration_gender select {
+          height: 49px;
+          width: 60%;
+          border: 1px solid #EEE;
+          box-shadow: inset 0px 1px 5px -1px #EEE;
+          border-radius: 3px; }
+      .wrapper .formRegistration_adress-title {
+        display: block;
+        margin: 5px 0;
+        font-size: 1rem;
+        line-height: 40px; }
+      .wrapper .formRegistration_adress textarea {
+        height: 80px;
+        width: calc(100% - 4px); }
+      .wrapper .formRegistration_termsConditions {
+        display: block;
+        margin: 15px 0; }
+        .wrapper .formRegistration_termsConditions input[type="checkbox"] {
+          float: left;
+          margin: 5px 5px 0 0;
+          height: 40px;
+          width: 40px; }
+        .wrapper .formRegistration_termsConditions-title {
+          line-height: 50px;
+          font-size: 1rem; }
+      .wrapper .formRegistration_signUp {
+        margin: 8px auto;
+        height: 50px;
+        width: 100%;
+        font-size: 1rem; }
+    .wrapper .conditions {
+      margin: 20px auto 0;
+      padding: 5px;
+      min-width: 95%; }
+      .wrapper .conditions_text {
+        font-size: 1.3rem; } }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+	<div class="wrapper">
+		<form class="formLogin">
+			<h4 class="formLogin_header">My Account Login</h4>
+			<p class="formLogin_inputUsername-title">Username</p>
+			<div class="formLogin_inputUsername">
+				<input type="text" name="username">
+				<i class="fas fa-user"></i>
+			</div>	
+			<p class="formLogin_inputPassword-title">Password</p>
+			<div class="formLogin_inputPassword">
+				<input type="password" name="username">
+				<i class="fas fa-lock"></i>
+			</div>		
+			<div class="formLogin_submit">
+				<input type="submit" name="submit" value="Log In">
+				<a href="" class="formLogin_submit-forgotPassword">Forgot Password?</a>
+			</div>
+			<div class="formLogin_divider">
+				<div class="formLogin_divider-line"></div>
+				<span>Or Sign in With</span>
+				<div class="formLogin_divider-line"></div>
+			</div>
+			<div class="formLogin_socialButtons">
+				<a href="" class="formLogin_socialButtons-twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+				<a href="" class="formLogin_socialButtons-facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+				<a href="" class="formLogin_socialButtons-google"><i class="fab fa-google-plus-g"></i><span>Google+</span></a>
+			</div>
+		</form>
+		<form class="formRegistration">
+			<h4 class="formRegistration_header">Registration</h4>
+			<label class="formRegistration_firstName"><span class="formRegistration_firstName-title">First Name*</span><input type="text" name=""></label>
+			<label class="formRegistration_lastName"><span class="formRegistration_lastName-title">Last Name*</span><input type="text" name=""></label>
+			<label class="formRegistration_password"><span class="formRegistration_password-title">Password*</span><input type="password" name=""></label>
+			<label class="formRegistration_passwordConfirm"><span class="formRegistration_passwordConfirm-title">Confirm Password*</span><input type="password" name=""></label>
+			<label class="formRegistration_date">
+				<span class="formRegistration_date-title">Date of Birth*</span>
+				<input type="number" name="month" min="1" max="12" placeholder="MM">
+				<input type="number" name="day" min="1" max="31" placeholder="DD">
+				<input type="number" name="year" min="1950" placeholder="YYYY">
+			</label>
+			<label class="formRegistration_gender">
+				<span class="formRegistration_gender-title">Gender</span>
+				<select>
+					<option>Female</option>
+					<option>Male</option>
+				</select>
+			</label>
+			<label class="formRegistration_telNumber">
+				<span class="formRegistration_telNumber-title">Mobile/Cell No.*</span>
+				<input type="text" name="telnumber">
+			</label>
+			<label class="formRegistration_email">
+				<span class="formRegistration_email-title">E-mail*</span>
+				<input type="email" name="email">
+			</label>
+			<label class="formRegistration_emailConfirm">
+				<span class="formRegistration_emailConfirm-title">Confirm E-mail*</span>
+				<input type="email" name="emailConfirm">
+			</label>
+			<label class="formRegistration_adress">
+				<span class="formRegistration_adress-title">Adress*</span>
+				<textarea></textarea>
+			</label>
+			<label class="formRegistration_city">
+				<span class="formRegistration_city-title">City*</span>
+				<input type="text" name="city">
+			</label>
+			<label class="formRegistration_state">
+				<span class="formRegistration_state-title">State*</span>
+				<input type="text" name="city">
+			</label>
+			<label class="formRegistration_zipCode">
+				<span class="formRegistration_zipCode-title">Zip/Postal Code*</span>
+				<input type="text" name="zipCode">
+			</label>
+			<label class="formRegistration_country">
+				<span class="formRegistration_country-title">Country*</span>
+				<input type="text" name="zipCode">
+			</label>
+			<label class="formRegistration_termsConditions">				
+				<input type="checkbox" name="agreement" value="agreement">
+				<span class="formRegistration_termsConditions-title">Agreed to Terms and Conditions</span>
+			</label>
+			<input class="formRegistration_signUp" type="submit" name="signUp" value="Sign Up">
+		</form>
+		<div class="conditions">
+			<p class="conditions_text">by clicking Sign Up, you have read and agree to the www.company.com<br> <a href="">terms and conditions</a> and <a href="">privacy policy</a></p>
+		</div>
+	</div>
+</body>
+</html>
