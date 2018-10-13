@@ -1,2 +1,0 @@
-6)Add build script in package.json to run the tasks in gulp to view the App
-8)Add readme.md where you should writen down how I should build the project to view the result of your work
